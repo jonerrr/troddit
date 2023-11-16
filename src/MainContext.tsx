@@ -46,10 +46,10 @@ export const MainProvider = ({ children }) => {
   const [fastRefresh, setFastRefresh] = useState(0);
 
   //settings. Initialized to undefined but defaults loaded in initial useEffect if previous setting not found
-  const [nsfw, setNSFW] = useState<boolean>();
-  const [autoplay, setAutoplay] = useState<boolean>();
+  const [nsfw, setNSFW] = useState<boolean>(true);
+  const [autoplay, setAutoplay] = useState<boolean>(true);
   const [hoverplay, setHoverPlay] = useState<boolean>();
-  const [columnOverride, setColumnOverride] = useState<number>();
+  const [columnOverride, setColumnOverride] = useState<number>(2);
   const [audioOnHover, setaudioOnHover] = useState<boolean>();
   const [autoHideNav, setAutoHideNav] = useState<boolean>();
   //controls how feed appears, switches to true when in multicolumn mode
